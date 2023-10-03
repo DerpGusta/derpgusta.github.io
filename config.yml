@@ -1,0 +1,44 @@
+baseURL: 'https://daemondiaries.com'
+languageCode: 'en-us'
+title:  'Daemon Diaries'
+theme:  'PaperModX'
+enableRobotsTXT: true
+
+params:
+  TocSide:  'left'
+  author: 'Sri Harsha'
+  EnableImageZoom: true
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  DisableLanguageSwitch: true
+  mainSections:
+  - posts
+  homeInfoParams:
+    Title: "Hi there! \U0001F44B"
+    Content: |
+      Welcome to my blog 🙂  
+      Hope you enjoy it! 
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/toletysriharsha"
+    - name: github
+      url: "https://github.com/DerpGusta"
+    - name: rss-simple
+      url: "feed.xml"
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+menu:
+  main:
+  - name: Posts
+    url: /posts
+    weight: 20
+  - name: About
+    url: /about
+    weight: 30
+outputs:
+  home:
+    - html
+    - rss
+
