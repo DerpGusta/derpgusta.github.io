@@ -11,6 +11,7 @@ params:
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   DisableLanguageSwitch: true
+  defaultTheme: dark
   mainSections:
   - posts
   homeInfoParams:
