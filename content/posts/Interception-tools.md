@@ -26,18 +26,18 @@ Plugins are also available for easy configuration and remapping for common scena
 Here's how I did it:
 
 0. Remove any previous configurations that modified key events I had to remove my previous settings from `.xinitrc`
-```shell
+```
 # setxkbmap -option 'ctrl:nocaps'
 # xcape -e 'Control_L=Escape'
 ```
 
 1.  Kill the xcape process and reset the setxkbmap options
-```shell
+```
 pkill xcape
 setxkbmap -option
 ```
 2. Install the tools first! I use Arch so yay does it seamlessly for me.
-```shell
+```
 yay -S interception-caps2esc #installs the interception-tools (the main package) as well
 ```
 
@@ -50,7 +50,7 @@ yay -S interception-caps2esc #installs the interception-tools (the main package)
 ```
 
 4. Enable the provided systemd service `udevmon.service`
-```shell
+```
 sudo systemctl enable --now udevmon.service
 ```
 
